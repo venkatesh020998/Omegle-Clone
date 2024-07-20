@@ -1,0 +1,135 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-button {
+    background-color: #0056b3; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+/* Button Hover Effect */
+.custom-button:hover {
+    background-color: #007bff; /* Light blue */
+}
+
+.chat-window {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.video-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.chat-panel {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-panel ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.chat-panel ul li {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.chat-panel form {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-panel input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.chat-panel button {
+    padding: 10px 20px;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-input {
+    flex: 1;
+    box-sizing: border-box;
+    cursor: text; /* Change cursor for input fields */
+}
+.header-container {
+    width: 73vw;
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center; /* Centers items vertically */
+    padding: 10px; /* Adds padding around the container */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
+}
+
+.header-container h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for heading */
+    color: #333; /* Darker text color for contrast */
+}
